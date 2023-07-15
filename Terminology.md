@@ -87,7 +87,7 @@ Multiple namespace blocks with the same name are allowed. All declarations withi
 4. No need to give a semicolon after the closing brace of the definition of namespace.
 5. We can split the definition of namespace over several units.
 
-## variables
+## Variables
 Variables in C++ is a name given to a memory location. It is the basic unit of storage in a program.
 In C++, variables are used to store and manipulate data. They have a specific type that determines the kind of data they can hold, such as integers, floating-point numbers, characters, and more.
 
@@ -126,7 +126,7 @@ int main()
 }
 ```
 
-## types of variables
+## Types of Variables
 1. Local Variables
 2. Instance Variables
 3. Static Variables
