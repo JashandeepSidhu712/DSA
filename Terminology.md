@@ -73,3 +73,57 @@ int main() {
     return 0;
 }
 ```
+
+## namepsace
+In C++, namespaces provide a way to organize code into logical groups and prevent naming conflicts. 
+A namespace is a named scope that contains a set of identifiers (such as variables, functions, classes) that are unique within that namespace.
+
+By using namespaces, you can avoid naming conflicts between identifiers with the same name in different namespaces.
+Multiple namespace blocks with the same name are allowed. All declarations within those blocks are declared in the named scope.
+
+1. Namespace declarations appear only at global scope.
+2. Namespace declarations can be nested within another namespace.
+3. Namespace declarations don’t have access specifiers (Public or Private).
+4. No need to give a semicolon after the closing brace of the definition of namespace.
+5. We can split the definition of namespace over several units.
+
+## variables
+Variables in C++ is a name given to a memory location. It is the basic unit of storage in a program.
+In C++, variables are used to store and manipulate data. They have a specific type that determines the kind of data they can hold, such as integers, floating-point numbers, characters, and more.
+
+1. In C++, all the variables must be declared before use.
+2. The value stored in a variable can be changed during program execution.
+3. The name of the variable is case sensitive.
+4. All the variable names must begin with a letter of the alphabet or an underscore and does not contain any whitespace and special characters (ex #,$,%,*, etc).
+
+The **variable declaration** refers to the part where a variable is first declared or introduced before its first use. 
+
+A **variable definition** is a part where the variable is assigned a memory location and a value. 
+
+Most of the time, variable declaration and definition are done together.
+
+```
+#include <iostream>
+using namespace std;
+int main()
+{
+	// this is declaration of variable a
+	int a;
+	
+	// this is initialisation of a
+	a = 10;
+	
+	// this is definition = declaration + initialisation
+	int b = 20;
+
+	// declaration and definition of variable 'a123'
+	char a123 = 'a';
+
+	// This is also both declaration and definition as 'c' is allocated memory and assigned some garbage value.
+	float c;
+
+	return 0;
+}
+```
+
+
