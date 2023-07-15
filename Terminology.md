@@ -1,0 +1,3 @@
+## bits/stdc++.h
+bits/stdc++.h is a non-standard header file of GNU C++ library and is therefore, non-portable, and should be avoided. 
+Using it would include a lot of unnecessary stuff and increases compilation time.
