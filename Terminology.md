@@ -126,4 +126,22 @@ int main()
 }
 ```
 
+## types of variables
+1. Local Variables
+2. Instance Variables
+3. Static Variables
 
+**Local Variables**
+Local variables are declared inside a function, block, or scope.
+They are only accessible within the scope in which they are defined.
+
+**Instance Variables**
+Instance variables are declared within a class or a structure and belong to each instance (object) of the class.
+They are accessed using an object of the class or through the *this* pointer.
+Instance variables have a lifetime tied to the lifetime of the object they belong to.
+Each object of the class has its own copy of instance variables, and their values can vary between different objects.
+
+**Static Variables**
+Static variables are declared within a function, block, or class with the *static* keyword.
+They are shared among all instances (objects) of the class or function.
+Static variables have a longer lifetime and are initialized only once, even if the scope is invoked multiple times.
