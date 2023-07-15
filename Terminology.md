@@ -145,3 +145,21 @@ Each object of the class has its own copy of instance variables, and their value
 Static variables are declared within a function, block, or class with the *static* keyword.
 They are shared among all instances (objects) of the class or function.
 Static variables have a longer lifetime and are initialized only once, even if the scope is invoked multiple times.
+
+## Instance Variable Vs Static Variable
+Each object will have its own copy of the instance variable 
+whereas We can only have one copy of a static variable per class irrespective of how many objects we create.
+
+Changes made in an instance variable using one object will not be reflected in other objects as each object has its own copy of the instance variable. 
+In the case of static, changes will be reflected in other objects as static variables are common to all objects of a class.
+
+We can access instance variables through object references and 
+Static Variables can be accessed directly using the class name.
+
+```
+class Example
+{
+    static int a; // static variable
+    int b;        // instance variable
+}
+```
