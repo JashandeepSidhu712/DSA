@@ -31,6 +31,7 @@ std::vector provides iterators, allowing you to traverse elements in a range-bas
 #include <vector>
 std::vector<T> vec;  // Declaration of an empty vector of type T
 std::vector<int> numbers = {1, 2, 3, 4, 5}; // Initialization with an initializer list
+
 std::vector<int> vecWithSize(5, 0); // Creates a vector of size 5 with all elements initialized to 0
 std::vector<int> vecWithSize(5); // Creates a vector of size 5 with all elements default-initialized to 0 (for int)
 ```
@@ -46,8 +47,6 @@ When creating a std::vector using an initializer list, the vector automatically 
 auto iterator = itr;
 itr = v1.begin(); //it returns an iterator pointing to the first element of the vector.
 itr = vec.end(); //it returns an iterator pointing to the element theoretically after the last element of the vector.
-vec.front(); //it returns a reference to the first element of the vector.
-vec.back(); //it returns a reference to the last element of the vector
 ```
 
 **3. Adding and Removing Elements**
@@ -78,6 +77,7 @@ bool empty = vec.empty();           // Checks if the vector is empty (size == 0)
 for (const auto& element : vec) {
     // Do something with 'element'
 }
+```
 
 const keyword ensures that the elements of the vector are treated as read-only during iteration. It prevents accidental modifications to the elements, providing a level of safety. <br>
 If you attempt to modify the element within the loop, the compiler will raise an error.
@@ -85,13 +85,13 @@ If you attempt to modify the element within the loop, the compiler will raise an
 auto keyword allows automatic type deduction. It enables the compiler to determine the appropriate type of the element based on the type of the elements stored in the vector vec. This makes the code more concise and less error-prone, especially when dealing with complex data types.
 
 & (ampersand) signifies that element is a reference to the actual element in the vector, rather than a copy of it.
-```
 
 **7. Accessing Elements**
 
 ```
 T element = vec[index]; // Accesses the element at the specified index (bounds-checked)
 T& ref = vec[index];     // Accesses the element at the specified index using a reference
+
 T frontElem = vec.front(); // Accesses the first element
 T backElem = vec.back();   // Accesses the last element
 ```
