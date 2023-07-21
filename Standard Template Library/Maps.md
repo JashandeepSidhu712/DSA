@@ -28,7 +28,12 @@ In C++ STL, std::multimap is an **associative container that represents a sorted
 
 Iterating over a std::multimap will provide the elements in ascending order based on the keys.
 
-![image](https://github.com/JashandeepSidhu712/CPP-basics/assets/117754690/757d5b7e-371b-4373-959f-f1006846ff4a)
+# UNORDERED_MULTIMAP IN C++
+
+In C++ STL, std::unordered_multimap is an **associative container that represents an unordered set of key-value pairs**, std::unordered_multimap **allows duplicate keys**. It is also known as an unordered multimap or a hash multimap. std::unordered_multimap uses a hash table to efficiently organize the elements based on their hash values.
+
+![image](https://github.com/JashandeepSidhu712/CPP-basics/assets/117754690/0661fccd-1979-4d73-aaa9-833a2538c3ce)
+
 
 ## FUNCTIONS OF MAP AND UNORDERED_MAP
 
@@ -52,6 +57,11 @@ for multimap
 std::multimap<KeyType, ValueType> myMultiMap; // Declaration of an empty multimap
 ```
 
+for unordered_multimap
+```
+#include <unordered_map>
+unordered_multimap<KeyType, ValueType> m; // Declaration of an empty map
+```
 
 **2. Inserting Elements**
 
@@ -85,7 +95,7 @@ if (it != m.end()) {
 }
 ```
 
-for multimap
+for multimap and unordered_multimap
 ```
 auto range = multimap.equal_range(ageToFind);
 for (auto it = range.first; it != range.second; ++it)
