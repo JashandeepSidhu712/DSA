@@ -22,6 +22,14 @@ It generally uses more memory compared to std::map, as it needs to maintain addi
 
 The elements in an std::unordered_map do not have a specific order, and when iterating through it, the elements will be presented in an arbitrary order.
 
+# MULTIMAP IN C++
+
+In C++ STL, std::multimap is an **associative container that represents a sorted set of key-value pairs**, similar to std::map. The main difference is that std::multimap **allows duplicate keys**, while std::map only permits unique keys.
+
+Iterating over a std::multimap will provide the elements in ascending order based on the keys.
+
+![image](https://github.com/JashandeepSidhu712/CPP-basics/assets/117754690/757d5b7e-371b-4373-959f-f1006846ff4a)
+
 ## FUNCTIONS OF MAP AND UNORDERED_MAP
 
 **1. Declaration and Initialization**
@@ -37,6 +45,13 @@ for unordered_map
 #include <unordered_map>
 unordered_map<KeyType, ValueType> m; // Declaration of an empty map
 ```
+
+for multimap
+```
+#include <map>
+std::multimap<KeyType, ValueType> myMultiMap; // Declaration of an empty multimap
+```
+
 
 **2. Inserting Elements**
 
@@ -67,6 +82,15 @@ if (it != m.end()) {
     // The key was found in the map and Access the value using 'it->second' or (*iterator).second
 } else {
     // The key was not found in the map
+}
+```
+
+for multimap
+```
+auto range = multimap.equal_range(ageToFind);
+for (auto it = range.first; it != range.second; ++it)
+{
+    std::cout << it->second << std::endl;
 }
 ```
 
@@ -102,3 +126,11 @@ for (auto it = m.rbegin(); it != m.rend(); ++it)
     //traverse the elements in descending order of the keys.
 }
 ```
+
+## SUMMARY
+
+Use **std::map** when you need a sorted set of unique key-value pairs.
+
+Use **std::unordered_map** when you need fast access to elements and don't require any specific order.
+
+Use **std::multimap** when you need to allow duplicate keys and maintain them in sorted order.
