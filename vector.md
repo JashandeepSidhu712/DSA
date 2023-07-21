@@ -2,7 +2,12 @@
 
 In C++ STL, std::vector is one of the most commonly used and versatile container classes. The std::vector provides a **contiguous memory layout**, allowing efficient random access to elements, making it an excellent choice for many applications.
 
-### Comparing vector and arrays
+**Syntax for vectors**
+```
+vector<object_type> variable_name;
+```
+
+## COMPARISON OF VECTORS AND ARRAYS
 **Dynamic Size** <br>
 std::vector has the ability to **dynamically change its size at runtime**. Unlike a static array, which has a fixed size determined at compile-time. std::vector can grow or shrink as needed, making it much **more flexible** when dealing with data whose size may vary during the program's execution. 
 
@@ -26,27 +31,40 @@ std::vector provides iterators, allowing you to traverse elements in a range-bas
 #include <vector>
 std::vector<T> vec;  // Declaration of an empty vector of type T
 std::vector<int> numbers = {1, 2, 3, 4, 5}; // Initialization with an initializer list
+std::vector<int> vecWithSize(5, 0); // Creates a vector of size 5 with all elements initialized to 0
+std::vector<int> vecWithSize(5); // Creates a vector of size 5 with all elements default-initialized to 0 (for int)
 ```
 
 An initializer list is a convenient syntax for initializing the vector with a list of elements at the time of its creation. It allows you to create a std::vector and provide its initial elements in a single expression, making the code more concise and readable. <br>
 The initializer list is represented using curly braces {} with the elements separated by commas. <br>
 When creating a std::vector using an initializer list, the vector automatically adjusts its size to accommodate the provided elements.
 
-**2. Adding and Removing Elements**
+
+**2. Pointer to first and last element of vector**
+
+```
+auto iterator = itr;
+itr = v1.begin(); //it returns an iterator pointing to the first element of the vector.
+itr = vec.end(); //it returns an iterator pointing to the element theoretically after the last element of the vector.
+vec.front(); //it returns a reference to the first element of the vector.
+vec.back(); //it returns a reference to the last element of the vector
+```
+
+**3. Adding and Removing Elements**
 
 ```
 vec.push_back(element); // Adds an element to the end of the vector
 vec.pop_back();         // Removes the last element from the vector
 ```
 
-**3. Inserting and Erasing Elements**
+**4. Inserting and Erasing Elements**
 
 ```
 vec.insert(vec.begin() + index, element); // Inserts 'element' at the specified position
 vec.erase(vec.begin() + index);           // Removes the element at the specified position
 ```
 
-**4. Size and Capacity**
+**5. Size and Capacity**
 
 ```
 size_t size = vec.size();           // Number of elements in the vector
@@ -54,7 +72,7 @@ size_t capacity = vec.capacity();   // Total capacity of the vector (number of e
 bool empty = vec.empty();           // Checks if the vector is empty (size == 0)
 ```
 
-**5. Iterating Over Elements**
+**6. Iterating Over Elements**
 
 ```
 for (const auto& element : vec) {
@@ -69,7 +87,7 @@ auto keyword allows automatic type deduction. It enables the compiler to determi
 & (ampersand) signifies that element is a reference to the actual element in the vector, rather than a copy of it.
 ```
 
-**6. Accessing Elements**
+**7. Accessing Elements**
 
 ```
 T element = vec[index]; // Accesses the element at the specified index (bounds-checked)
@@ -78,17 +96,32 @@ T frontElem = vec.front(); // Accesses the first element
 T backElem = vec.back();   // Accesses the last element
 ```
 
-**7. Resizing the Vector**
+**8. Resizing the Vector**
 
 ```
 vec.resize(newSize);          // Resizes the vector to the new size, either truncating or padding with default-initialized elements
 vec.resize(newSize, value);   // Resizes the vector and initializes new elements with 'value'
 ```
 
-**8. Clearing and Shrinking**
+**9. Clearing and Shrinking**
 
 ```
 vec.clear();                  // Removes all elements from the vector (size becomes 0)
 vec.shrink_to_fit();          // Reduces the capacity to match the size
+```
+
+**10. Sorting the elements of vector**
+
+```
+std::sort(vec.begin(), vec.end()); //default sorting in accending order
+std::sort(vec.begin(), vec.end(), std::greater<int>()); //sorting in decending order
+```
+
+**11. Copying vector int another vector**
+
+```
+std::vector<int> copiedVec(originalVec.begin(), originalVec.end()); //using vector constructor
+std::vector<int> copiedVec = originalVec; //using assignment operator
+std::vector<int> copiedVec.assign(originalVec.begin(), originalVec.end()); //using assign member function
 ```
 
