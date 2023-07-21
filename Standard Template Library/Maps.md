@@ -32,6 +32,8 @@ Iterating over a std::multimap will provide the elements in ascending order base
 
 In C++ STL, std::unordered_multimap is an **associative container that represents an unordered set of key-value pairs**, std::unordered_multimap **allows duplicate keys**. It is also known as an unordered multimap or a hash multimap. std::unordered_multimap uses a hash table to efficiently organize the elements based on their hash values.
 
+# SUMMARY TABLE
+
 ![image](https://github.com/JashandeepSidhu712/CPP-basics/assets/117754690/0661fccd-1979-4d73-aaa9-833a2538c3ce)
 
 
