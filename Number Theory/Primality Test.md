@@ -74,4 +74,4 @@ Out of the pair, one lies below the sqrt(n) and one lies above the sqrt(n).
 
 ## LINKS TO QUESTIONS
 1. https://practice.geeksforgeeks.org/problems/prime-number2314/1
-2. 
+2. https://www.codechef.com/problems/PRB01
