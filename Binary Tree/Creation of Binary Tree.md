@@ -9,7 +9,7 @@ The node class has three members: <br>
    
 The node class also has a **constructor** node(int info) which takes an integer parameter and initializes the data member with the provided value. The **left and right pointers are set to NULL initially, indicating that the node has no left or right child**.
 
-The buildTree function is used to construct a binary tree. It takes a node* pointer as input, representing the root of the tree. The user is prompted to enter data for the current node using cin>>data.
+The buildTree function is used to construct a binary tree. It takes a node* pointer as input, representing the root of the tree. The user is prompted to enter data for the current node.
 
 If the user enters -1, it signifies the end of the branch, and thus, the function returns NULL to indicate that there are no more child nodes.
 
