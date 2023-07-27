@@ -28,6 +28,14 @@ The right child of the node at index i can be found at index (2 * i) + 2. <br>
 **Parent Index:** <br>
  The parent of the node at index i (except for the root node) can be found at index (i - 1) / 2.
 
+Indices starting from 1: <br>
+Left Child Index: <br>
+The left child of the node at index i can be found at index 2 * i. <br>
+Right Child Index: <br>
+The right child of the node at index i can be found at index 2 * i + 1. <br>
+Parent Index: <br>
+The parent of the node at index i (except for the root node) can be found at index i / 2.
+
 ## EFFICIENCY 
 Heaps allow efficient access to the maximum (in a max heap) or minimum (in a min heap) element in constant time (O(1)), as the root of the heap always holds the desired element. 
 
