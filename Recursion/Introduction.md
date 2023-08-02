@@ -8,6 +8,20 @@ Imagine you have a problem that can be solved by dividing it into smaller instan
 
 In the context of programming, a recursive function is a **function that calls itself with a modified version of the input until it reaches a base case**, where the function doesn't call itself anymore. The base case is essential to prevent infinite recursion and to ensure the function eventually stops.
 
+
+## BASE CONDITION
+Every recursive function must have a base case, also known as the **terminating condition**. 
+
+It defines the scenario in which the function stops calling itself and returns a result directly without further recursion. 
+
+Without a base case, the recursive function would keep calling itself indefinitely, leading to a stack overflow or an infinite loop.
+
+## RECURSIVE CASE
+In addition to the base case, a recursive function also has a recursive case. The recursive case is the part where the function calls itself to solve a smaller subproblem. This step is crucial to break down the original problem into smaller instances until it reaches the base case.
+
+## CALL STACK
+When a function is called, the program uses a data structure called the "call stack" to keep track of the function calls and their associated local variables. For each recursive call, a new stack frame is added to the call stack, and it gets removed when the base case is reached or when the function returns a value.
+
 ## Stack Overflow
 A stack overflow occurs when a program exhausts the available space in the call stack. 
 
@@ -54,5 +68,5 @@ int main() {
 2. Make sure to handle boundary conditions properly to avoid accessing invalid memory locations.
 3. Check for proper memory allocation and deallocation, especially when using dynamic memory.
 
-
+## RECURSION TREE
 
