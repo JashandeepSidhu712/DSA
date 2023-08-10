@@ -4,6 +4,8 @@ select smallest element repeatedly <br>
 from unsorted portion of the list <br>
 and moving it to the sorted portion of the list
 
+## PROGRAM
+
 ```
 void selectionSort(int arr[], int n)
 {
