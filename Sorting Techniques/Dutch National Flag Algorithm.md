@@ -34,3 +34,48 @@ low, mid, and high to track the boundaries of these regions:
 By doing this, the algorithm efficiently partitions the array into three regions while sorting it in a single pass, making it very efficient with a time complexity of O(n) where n is the size of the array.
 
 The DNF algorithm is a great example of a two-pointer approach used to solve specific problems efficiently. It's a classic algorithmic technique and can be extended to partition arrays with more than three distinct values as well.
+
+
+```
+#include <iostream>
+using namespace std;
+
+class dnf
+{
+    public:
+};
+void sort(int arr[], int n)
+{
+    int low=0, high = n-1;
+    int mid = 0;
+    
+    while(mid<=high)
+    {
+        if(arr[mid]==0)
+        {
+            swap(arr[mid],arr[low]);
+            mid++;
+            low++;
+        }
+        else if(arr[mid]==1)
+        {
+            mid++;
+        }
+        else
+        {
+            swap(arr[mid],arr[high]);
+            high--;
+        }
+    }
+}
+int main()
+{
+    int arr[10]={1,0,2,0,1,0,2,1,0,2};
+    
+    sort(arr, 10);
+    
+    for(auto i:arr)
+    cout<<i<<" ";
+    
+}
+```
