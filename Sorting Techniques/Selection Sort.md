@@ -43,3 +43,21 @@ int main()
     }
 }
 ```
+
+## TIME COMPLEXITY
+
+In each iteration of Selection Sort, it scans through the remaining unsorted part of the array to find the minimum (or maximum) element. 
+
+The number of comparisons made in the first iteration is 'n-1', <br>
+in the second iteration it's 'n-2', and so on, <br>
+until the last iteration where only 2 comparisons are needed. Last one is automatically sorted. <br>
+This results in a total of n+ (n-1) + (n-2) + ... + 2 comparisons.
+
+The number of swaps is equal to the number of iterations. i.e. (n-1) times
+
+Time Complexity = O(n * (n - 1) / 2) + O(n - 1) <br>
+Eliminating the negligible values <br>
+**Time Complexity = O(n^2)**
+
+## SPACE COMPLEXITY 
+Constant
