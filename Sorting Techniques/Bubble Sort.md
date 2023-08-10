@@ -38,6 +38,13 @@ void bubbleSort()
 ```
 
 ## TIME COMPLEXITY
+In first loop it runs from 0 to n-1, means n times <br>
+then from 0 to n-2, means n-1 times <br>
+and so on. <br>
+
+(n - 1) + (n - 2) + ... + 1
+
+**Time Complexity = O(n^2)**
 
 ## SPACE COMPLEXITY
 
