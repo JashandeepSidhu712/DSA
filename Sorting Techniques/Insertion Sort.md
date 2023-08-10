@@ -1,4 +1,9 @@
 # INSERTION SORT
+The first element of the array is considered sorted. 
+
+For each element at index i, compare it with the previous elements in the sorted portion of the array (indices 0 to i-1).
+
+insert in correct order, with right shifts.
 
 ## PROGRAM
 
@@ -19,8 +24,15 @@ void insertionSort()
 ```
 
 ## TIME COMPLEXITY
+in first loop, it swaps 0 times, <br>
+in next loop, 1 swap, <br> 
+and 2 swaps and so on.
+
+O(n*(n-1)/2) <br>
+**Time Complexity = O(n^2)**
 
 ## SPACE COMPLEXITY
+Constant
 
 ## PROGRAM WITH CLASS
 
