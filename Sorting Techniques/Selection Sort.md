@@ -120,6 +120,12 @@ class Solution
             cout<<arr[i]; //output values for array
         }
     }
+
+    
+    ~ Solution()
+    {
+        delete[] arr;
+    }
 };
 
 int main()
