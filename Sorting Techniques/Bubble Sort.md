@@ -1,4 +1,16 @@
 # BUUBLE SORT
+Push the largest element to the end of list, <br>
+by adjacent swaps <br>
+compares adjacent elements, and swaps them if they are in the wrong order.
+
+The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
+
+It is opposite of selection sort, <br>
+In selection sort, we select smallest element, move them to front sorted side. <br>
+We have sorted list then unsorted list.
+
+In bubble sort, we select largest element, move them to end sorted side. <br>
+We have unsorted list then sorted list.
 
 ## PROGRAM
 
