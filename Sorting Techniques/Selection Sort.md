@@ -91,7 +91,7 @@ class Solution
         } 
     }
     
-    void selectionSort(int arr[], int n)
+    void selectionSort()
     {
         for(int i=0;i<n-1;i++)
         {
@@ -133,11 +133,9 @@ int main()
     int n; //size of array
     cin>>n; //input the size of array
     
-    int arr[n]; //initialising the array with size n
-    
     Solution obj(n); //create an object of the class Solution and pass the value n as a parameter to its constructor
     
-    obj.selectionSort(arr, n);
+    obj.selectionSort();
     
 }
 ```
