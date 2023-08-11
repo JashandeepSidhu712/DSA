@@ -1,4 +1,5 @@
 # MERGE SORT
+Divide, sort and merge
 
 ## PROGRAM
 
@@ -62,8 +63,20 @@ void divide(int low, int high)
 ```
 
 ## TIME COMPLEXITY
+for dividing part, list gets divided into two, <br>
+i.e. n, n/2, n/4, ... <br>
+making it O(logn)
+
+for merging and sorting part, <br>
+for the worst case, all elements need to be sorted <br>
+making it O(n)
+
+So **Time Complexity = O(N log n)**
 
 ## SPACE COMPLEXITY
+ in the worst case, merge sort requires an additional array of the same size as the input array.
+
+ Therefor it is, **O(n)**
 
 ## PROGRAM WITH CLASS
 
