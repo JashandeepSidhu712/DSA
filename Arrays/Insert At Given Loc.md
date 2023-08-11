@@ -23,7 +23,7 @@ class Solution
     {
         this->n = n; //this-> is a way to differentiate between the local parameter n and the member variable n
         
-        arr = new int[n]; // dynamically allocate memory for an integer array of size N
+        arr = new int[n+1]; // dynamically allocate memory for an integer array of size N
         //The new keyword is used to request memory allocation
         
         for(int i=0;i<n;i++)
