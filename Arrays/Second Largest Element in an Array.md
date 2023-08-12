@@ -1,13 +1,21 @@
 # SECOND LARGEST ELEMENT IN AN ARRAY
 
-#### APPROACH 1 BRUTE FORCE
+## APPROACH 1 BRUTE FORCE
 Sort the array, check for same elements, in given test case below <br>
 
 After sorting <br>
 1 7 7 7 7 7 <br>
 so compare if we have same elements which are largest.
 
-## APPROACH 2 OPTIMAL SOLUTION
+## APPROACH 2 BETTER APPROACH
+Solve in two passes,<br>
+
+in first, find the largest element.
+
+In second pass, compare other elements <br>
+if(smaller than largest/greater than second largest and not equal to largest)
+
+## APPROACH 3 OPTIMAL SOLUTION
 
 ```
 #include<iostream>
