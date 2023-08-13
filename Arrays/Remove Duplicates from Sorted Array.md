@@ -64,6 +64,7 @@ int main()
     
     obj.removeDuplicate();
 }
+```
 
 ## QUESTIONS
 
@@ -72,4 +73,4 @@ https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
 https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
 https://practice.geeksforgeeks.org/problems/remove-duplicate-elements-from-sorted-array/1
-```
+
